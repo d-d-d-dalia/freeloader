@@ -1,0 +1,9 @@
+<form method="post" action="/subscriptions/<%= @subscription.id %>">
+    <input id="hidden" type="hidden" name="_method" value="PATCH">
+    <p> <input type="text" name="service" value="<%=@subscription.service%>" > </p>
+    <input type="submit" value="Edit Service">
+</form>
+
+<form method='get' action='/subscriptions'> 
+    <input type="submit" value="What are you mooching?">
+</form>

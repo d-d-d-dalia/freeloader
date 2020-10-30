@@ -1,0 +1,11 @@
+<h1>All the subscriptions you're mooching currently:</h1>
+
+<% @subscriptions.each do |s| %>
+  <h3><a href="/subscriptions/<%=s.id%>"> <%=s.service%> </a><h3>
+<% end%>
+
+<h4><a href="/subscriptions/new">Add a Subscription</a><h4>
+
+<h4> <a href="/users/<%=current_user.id%>"> Profile Page </a><h4>
+
+<h4><a href="/logout">Log Out</a><h4>

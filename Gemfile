@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+
+gem 'pry'
+gem 'sinatra-activerecord'
+gem 'sqlite3', '~>1.3.6'
+gem 'rake'
+gem 'activerecord', '~> 5.2.3'
+gem 'rack'
+gem 'shotgun'
+gem 'sinatra'
+gem 'require_all'
+gem 'bcrypt'
+gem 'bootstrap'

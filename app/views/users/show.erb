@@ -1,0 +1,21 @@
+<h2> Hey, <%= @user.name %>! <h2>
+
+<h3> These are all the subscriptions you're mooching: <h3>
+
+<% @user.subscriptions.each do |s| %>
+    <h3><a href="/subscriptions/<%=s.id%>"> <%=s.service%> </a><h3>
+<%end%>
+
+<form method='get' action='/subscriptions'>
+    <button type="submit" value="Subscriptions Index"> Subscriptions Index </button>
+</form>
+
+<form method='get' action='/subscriptions/new'>
+    <input type="submit" value="Add a Subscrtiption">
+</form>
+
+<form method='get' action='/friends'>
+    <input type="submit" value="List of victims">
+</form>
+
+<h4><a href="/logout">Log Out</a><h4>

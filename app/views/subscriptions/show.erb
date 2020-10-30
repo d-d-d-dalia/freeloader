@@ -1,0 +1,18 @@
+<h2><%=@subscription.service%></h2>
+
+<a href="/users/<%=@subscription.user.id%>"> Profile Page </a>
+
+<form method='get' action='/subscriptions'>
+    <button type="submit" value="Subscriptions Index"> Subscriptions Index </button>
+</form>
+
+<form method="get" action="/subscriptions/<%=@subscription.id%>/edit">
+  <button type="submit" value="Edit Service"> Edit Subscription </button>
+</form>
+
+<form method="post" action="/subscriptions/<%=@subscription.id%>/delete">
+  <input id="hidden" type="hidden" name="_method" value="DELETE">
+  <button type="submit"> Delete Subscription </button>
+</form>
+
+<h4><a href="/logout">Log Out</a><h4>
